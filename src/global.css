@@ -1,0 +1,10 @@
+html,
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+/* assign global style variables */
+:root {
+  --primary-color: #0068bd;
+  --secondary-color: #d53b00;
+}

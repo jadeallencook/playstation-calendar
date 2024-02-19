@@ -1,0 +1,40 @@
+div.CalendarCell {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  background-size: cover;
+}
+
+div.CalendarCell.hidden {
+  visibility: hidden;
+}
+
+div.CalendarCell::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+div.CalendarCell > div {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 5px;
+  right: 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+div.CalendarCell.event {
+  cursor: pointer;
+}
+
+div.CalendarCell.event:hover {
+  opacity: 0.5;
+}
+
+div.CalendarCell.event > div {
+  background-color: #0068bd;
+  color: #fff;
+}

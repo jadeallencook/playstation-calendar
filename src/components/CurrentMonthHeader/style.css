@@ -1,0 +1,28 @@
+div.CurrentMonthHeader {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  vertical-align: middle;
+  align-items: center;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-bottom: 2px solid #aeaeae;
+}
+
+div.CurrentMonthHeader > a {
+  cursor: pointer;
+  font-size: 2em;
+}
+
+div.CurrentMonthHeader > h1 {
+  text-align: center;
+  font-weight: 100;
+}
+
+div.CurrentMonthHeader > a:last-child {
+  text-align: right;
+}
+
+div.CurrentMonthHeader > a:hover {
+  opacity: 0.5;
+}
